@@ -67,9 +67,17 @@ table, td, th {
   text-align: center;
 }
 
+tr td:first-child, tr th:first-child {
+  background-color: lightgray;
+}
+
 @media print {
   thead {
     display: table-row-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
   }
 
   td, th {
